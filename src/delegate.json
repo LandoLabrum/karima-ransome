@@ -1,0 +1,72 @@
+{
+    "title": "NuBirth",
+    "style": {
+        "primary": {
+            "color": "grey-text text-darken-4",
+            "background": "white"
+        },
+        "secondary": {
+            "color": "white-text",
+            "background": "grey lighten-3"
+        }
+    },
+    "brand": {
+        "logo": {
+            "alt": "logo",
+            "src": "https://dttdrlk9qx747.cloudfront.net/images/logos/logo.2012181350185.png"
+        },
+        "contact": {
+            "email": "info@utahcountertops.com",
+            "tel": "4356719245",
+            "address": {
+                "link": "https://www.google.com/maps/dir//Utah+Countertops,+358+W+5900+S,+Murray,+UT+84107/@40.6433467,-111.9022248,17z/",
+                "text": "123 Fake Street"
+            }
+        }
+    },
+    "nav": {
+        "links": {
+            "desktop": [
+                {
+                    "text": "Contact",
+                    "link": "contact",
+                    "class": "modal-trigger black-text"
+                },
+                {
+                    "text": "about",
+                    "link": "/about",
+                    "class": "black-text"
+                }
+            ],
+            "mobile": [
+                {
+                    "text": "phone",
+                    "link": "contact",
+                    "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light red"
+                }
+            ]
+        }
+    },
+    "carousel": {
+        "slides": [
+            {
+                "title": "title1",
+                "description": "description",
+                "img": "",
+                "action": {
+                    "class": "",
+                    "href": ""
+                }
+            },
+            {
+                "title": "title2",
+                "description": "description",
+                "img": "",
+                "action": {
+                    "class": "",
+                    "href": ""
+                }
+            }
+        ]
+    }
+}
