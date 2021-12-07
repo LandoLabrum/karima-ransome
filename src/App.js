@@ -2,13 +2,14 @@ import './main.css';
 import Nav from './components/Navbar';
 import Contact from './components/Contact';
 import Home from './pages/Home';
+import About from './pages/About';
+import Form from './components/ContactForm';
 
 import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 export default function App() {
@@ -17,20 +18,14 @@ export default function App() {
         <Nav/>
         <Routes>
           <Route path="/about" element={<About/>}/>
-          <Route path="/users" element={<Users/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
+        <div id="contactForm" className="modal">
+        <div className="modal-content">
+          <Form/>
+        </div>
+        </div>
         <Contact/>
     </Router>
   );
-}
-
-
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }

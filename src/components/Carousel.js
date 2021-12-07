@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import data from '../delegate.json';
-// import logo from '../media/logo.png';
+import data from '../delegate';
 
 export default function Carousel() {
-    const [CarouselData, setCarouselData] = useState(null)
-    useEffect(() => {
-        setCarouselData(data.carousel.slides);
-    }, [])
-    return (<>
-  <div className="carousel carousel-slider center">
-        {CarouselData && CarouselData.map(p => 
-                  <div key={p.title} className="carousel-item red">
-                    <h3 className="black">{p.title}</h3>
-                  <a className="btn waves-effect white grey-text darken-text-2">button</a>
-                </div>
-            )}
-            </div>
-    </>
-    )
+  const CarouselData = data.carousel.slides
+  return (<>
+    {/* {JSON.stringify(CarouselData)} */}
+    <div className="carousel carousel-slider">
+      {CarouselData && CarouselData.map(p =>
+        <div key={p.title} className="carousel-item">
+          <img alt={p.title} className="responsive-img" src={p.img} />
+          <div className="overlay">
+            <h1 className="orange-text">{p.title}</h1>
+            <p >{p.description}</p>
+            <a href="/" className="btn waves-effect white grey-text darken-text-2">button</a>
+          </div>
+        </div>
+      )}
+    </div>
+  </>
+  )
 };
 
 

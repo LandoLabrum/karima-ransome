@@ -1,8 +1,60 @@
+img.logo{
+    max-height: 100px;
+    margin: 25px 0px 0px 20px !important
+}
 .fab{
     margin: 0px;
     top: auto;
     right: 20px;
     bottom: 20px;
     left: auto;
-    position: fixed;
+    position: fixed !important;
+}
+a.sidenav-trigger{
+    color: #000;
+}
+.nav-helper{
+    margin-top: 100px;
+}
+.nav-wrapper{
+    height: 160px !important
+}
+@media only screen and (max-width: 992px){
+    img.logo{
+        max-height: 80px;
+        margin: 8px 0px 0px 0px !important
+    }
+    .nav-wrapper{
+        height: 100px !important
+    }
+    .nav-helper{
+        margin-top: 0;
+    }
+}
+nav ul a {
+    font-size: 1.5rem;
+    padding: 30px 15px !important;
+}
+nav{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 100px;
+    line-height: 100px;
+}
+.carousel{
+    min-height: 100% !important
+}
+.overlay{
+        /* position: relative; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: table;
+        margin-left: 5% !important;
+}
+.btn-block{
+    width: 100%
 }
