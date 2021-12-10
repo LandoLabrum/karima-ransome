@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/karima-ransome/static/css/main.5ed77d0a.chunk.css",
-    "main.js": "/karima-ransome/static/js/main.7b10ce70.chunk.js",
-    "main.js.map": "/karima-ransome/static/js/main.7b10ce70.chunk.js.map",
-    "runtime-main.js": "/karima-ransome/static/js/runtime-main.0881ddbe.js",
-    "runtime-main.js.map": "/karima-ransome/static/js/runtime-main.0881ddbe.js.map",
-    "static/js/2.574ce2b5.chunk.js": "/karima-ransome/static/js/2.574ce2b5.chunk.js",
-    "static/js/2.574ce2b5.chunk.js.map": "/karima-ransome/static/js/2.574ce2b5.chunk.js.map",
-    "static/js/3.36e84cec.chunk.js": "/karima-ransome/static/js/3.36e84cec.chunk.js",
-    "static/js/3.36e84cec.chunk.js.map": "/karima-ransome/static/js/3.36e84cec.chunk.js.map",
+    "main.js": "/karima-ransome/static/js/main.9fcebba0.chunk.js",
+    "main.js.map": "/karima-ransome/static/js/main.9fcebba0.chunk.js.map",
+    "runtime-main.js": "/karima-ransome/static/js/runtime-main.c6c03e26.js",
+    "runtime-main.js.map": "/karima-ransome/static/js/runtime-main.c6c03e26.js.map",
+    "static/js/2.e1419561.chunk.js": "/karima-ransome/static/js/2.e1419561.chunk.js",
+    "static/js/2.e1419561.chunk.js.map": "/karima-ransome/static/js/2.e1419561.chunk.js.map",
+    "static/js/3.1b6d52af.chunk.js": "/karima-ransome/static/js/3.1b6d52af.chunk.js",
+    "static/js/3.1b6d52af.chunk.js.map": "/karima-ransome/static/js/3.1b6d52af.chunk.js.map",
     "index.html": "/karima-ransome/index.html",
-    "static/css/main.5ed77d0a.chunk.css.map": "/karima-ransome/static/css/main.5ed77d0a.chunk.css.map",
-    "static/js/2.574ce2b5.chunk.js.LICENSE.txt": "/karima-ransome/static/js/2.574ce2b5.chunk.js.LICENSE.txt",
+    "static/js/2.e1419561.chunk.js.LICENSE.txt": "/karima-ransome/static/js/2.e1419561.chunk.js.LICENSE.txt",
     "static/media/1.jpeg": "/karima-ransome/static/media/1.e6b9d92c.jpeg",
     "static/media/2.jpeg": "/karima-ransome/static/media/2.dda5d7d2.jpeg",
     "static/media/3.jpeg": "/karima-ransome/static/media/3.2cfed748.jpeg",
@@ -20,9 +18,8 @@
     "static/media/logo.bd87f0d0.png": "/karima-ransome/static/media/logo.bd87f0d0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0881ddbe.js",
-    "static/js/2.574ce2b5.chunk.js",
-    "static/css/main.5ed77d0a.chunk.css",
-    "static/js/main.7b10ce70.chunk.js"
+    "static/js/runtime-main.c6c03e26.js",
+    "static/js/2.e1419561.chunk.js",
+    "static/js/main.9fcebba0.chunk.js"
   ]
 }

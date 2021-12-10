@@ -1,0 +1,67 @@
+@media only screen and (max-width: 992px){
+    img.logo{
+        max-height: 80px;
+        margin: 7px 0px 0px 0px
+    }
+    nav{
+        height: 100px !important
+    }
+    .nav-helper{
+        margin-top: 0px;
+    }
+}
+@media only screen and (min-width: 993px){
+    img.logo{
+        max-height: 100px;
+        margin: 11px 0px 0px 13px !important
+    }
+    .nav-wrapper{
+        height: 125px !important;
+        
+    }
+    .nav-helper{
+        margin-top: 130px;
+    }
+}
+
+.fab{
+    margin: 0px;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    position: fixed !important;
+}
+a.sidenav-trigger{
+    color: #000;
+}
+
+
+
+nav ul a {
+    font-size: 1.5rem;
+    padding: 30px 15px !important;
+}
+nav{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 100px;
+    line-height: 100px;
+}
+.carousel{
+    min-height: 100% !important
+}
+.overlay{
+        /* position: relative; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: table;
+        margin-left: 5% !important;
+}
+.btn-block{
+    width: 100%
+}
