@@ -20,11 +20,12 @@
         
     }
     .nav-helper{
-        margin-top: 130px;
+        margin-top: 140px !important;
     }
 }
 
 .fab{
+    z-index: 999 !important;
     margin: 0px;
     top: auto;
     right: 20px;
