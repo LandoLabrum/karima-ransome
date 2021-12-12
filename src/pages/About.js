@@ -3,9 +3,7 @@ import Carousel from "../components/Carousel";
 
 export default function About() {
     return (<div className='nav-helper'>
-        <div className="container center">
-        <h2>About</h2>
-        </div>
+      
         <Carousel/>
         <div className="container">
 

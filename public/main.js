@@ -15,7 +15,7 @@ $(document).ready(function () {
       (key >= 96 && key <= 105) // Allow number pad
     );
   };
-
+  
   const isModifierKey = (event) => {
     const key = event.keyCode;
     return (event.shiftKey === true || key === 35 || key === 36) || // Allow Shift, Home, End
@@ -61,4 +61,5 @@ $(document).ready(function () {
   const inputElement = document.getElementById('tel');
   inputElement.addEventListener('keydown', enforceFormat);
   inputElement.addEventListener('keyup', formatToPhone);
+  
 });

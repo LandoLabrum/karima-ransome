@@ -1,23 +1,106 @@
+.wrapper {
+    overflow: hidden;
+    right: 0; 
+}
+
+#slide {
+    position: absolute;
+    background-color: #A7CEEF;
+    border: 5px solid #A7CEEF;
+    border-top-left-radius: 20px !important;
+    right: -80%;
+    width: 60%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+    height: 140px;
+    bottom: 0;
+    padding-left: 15px;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+.containerb {
+    position: relative;
+    width: 100%;
+  }
+.imga{
+    width: 70px;
+    height: auto;
+}
+.imga-text{
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.imga-text-title{line-height: 100%;    margin: 0;}
+.imgb{
+    width: 100%;
+    height: auto;
+
+}
+.overlayb{
+    opacity: .9 !important;
+    background-color: #A7CEEF;
+    position: absolute; 
+    bottom: 5%; 
+    color: #cf1010; 
+    padding: 15px 30px;
+    height: 170px;
+    width: 80%;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+html, body { max-width: 100%; overflow-x: hidden; }
+.pmaroon{
+    background-color: #C9A3A4 !important ;
+}
+section {
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .125);
+    height: 64px;
+    opacity: 0;
+    transform: translate(0, 50%);
+    visibility: hidden;
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+    will-change: opacity, visibility;
+  }
+  .hide{opacity: 0;}
+  .is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    display: flex; 
+  }
 .fade-item {
-    transition: 2s all ease-in-out;
+    transition: 3s all ease-in-out;
     opacity: 0;
 }
 
 .fadein {
-    animation: fadeIn 0.9s 1;
+    animation: fadeIns 3s 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIns {
     0% {
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: .9;
     }
 }
 .left-in{
-    transform: translateX(-100%) translateZ(0px);
+    overflow-x: hidden;
+    transform: translateX(-50%);
 }
 @media only screen and (max-width: 992px){
     img.logo{

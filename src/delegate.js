@@ -81,15 +81,6 @@ const data = {
     "carousel": {
         "slides": [
             {
-                "title": "title1",
-                "description": "description",
-                "img": require("./media/slider/1.jpeg").default,
-                "action": {
-                    "class": "",
-                    "href": ""
-                }
-            },
-            {
                 "title": "title2",
                 "description": "description",
                 "img": require("./media/slider/2.jpeg").default,
@@ -130,7 +121,7 @@ const data = {
     },
     "gridlist": {
         "title":"Personalized Home Care Services.",
-        "description":"Chances are you will find yourself in the role of caregiver or you’ll be a member of a support network for someone who is caregiving. Caregivers often don’t think of themselves as caregivers, but if you’re taking time absent from other activities to supply care to somebody, at that point you're a caregiver.  A developing number of Americans are giving care for maturing guardians, other family individuals or near companions. Others are caring for accomplices or children with uncommon needs. More than 40 million individuals are working at a job while also caregiving.  And in spite of the fact that caregiving can be fulfilling in its claim right, most caregivers are giving care without being fiscally compensated for their time or contribution For caregivers, looking for and finding solid data and support is critical. Don’t waver to inquire for offer assistance from others. And don’t disregard to require care of yourself and your possess wellbeing. (Caregivers are at expanded hazard of their own wellbeing",
+        "description":"At Nu-Birth home services, it is our mission to provide high quality services at an affordable rates that exceeds industry standards.",
         "items": [
             {
                 "title": "Seniors",
@@ -143,7 +134,7 @@ const data = {
             },
             {
                 "title": "maternity",
-                "description": "Helping Those maternity",
+                "description": "We work hard to provide patients with care that is consistent with safety and effectiveness. Patients receive individualized care that considers their personal needs and the needs of the unborn child.",
                 "img": require("./media/slider/maternity.jpeg").default,
                 "action": {
                     "class": "",
@@ -152,7 +143,7 @@ const data = {
             },
             {
                 "title": "Recuperation",
-                "description": "Helping Those Recuperating",
+                "description": "Our caregivers can support your recovery efforts and provide you with comfort and help. Whether you need help here and there, or need help 24 hours a day, we're always available to meet your individual needs.",
                 "img": require("./media/slider/recuperation.jpg").default,
                 "action": {
                     "class": "",
@@ -161,7 +152,7 @@ const data = {
             },
             {
                 "title": "Disabled",
-                "description": "Helping People with Disabilities",
+                "description": "Home nurses provide reliable one-on-one care for people with special needs, regardless of age or illness. Our care team provides flexible hourly and 24-hour services to provide relatives with  experienced caregivers to meet the individual needs of the family.",
                 "img": require("./media/slider/disabled.jpg").default,
                 "action": {
                     "class": "",
@@ -170,7 +161,7 @@ const data = {
             },
             {
                 "title": "Veterans",
-                "description": "Helping Veterans",
+                "description": "There are various home care programs and services tailored to meet the specific needs of veterans. From personal care to  appointments to short-term care services, a home-based professional caregiver will meet all your care needs.",
                 "img": require("./media/slider/veteran.jpg").default,
                 "action": {
                     "class": "",
@@ -179,7 +170,7 @@ const data = {
             },
             {
                 "title": "Family",
-                "description": "Helping Busy Families",
+                "description": "With the burdons that come with a busy schedule, it sometimes can be hard to make sure your loved ones are safe. Our Team is here to assure your family's safety and needs are put first.",
                 "img": require("./media/slider/family.jpg").default,
                 "action": {
                     "class": "",
