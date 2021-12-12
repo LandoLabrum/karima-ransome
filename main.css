@@ -1,3 +1,24 @@
+.fade-item {
+    transition: 2s all ease-in-out;
+    opacity: 0;
+}
+
+.fadein {
+    animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.left-in{
+    transform: translateX(-100%) translateZ(0px);
+}
 @media only screen and (max-width: 992px){
     img.logo{
         max-height: 80px;
@@ -7,7 +28,7 @@
         height: 100px !important
     }
     .nav-helper{
-        margin-top: 0px;
+        margin-top: -15px;
     }
 }
 @media only screen and (min-width: 993px){
@@ -20,7 +41,7 @@
         
     }
     .nav-helper{
-        margin-top: 140px !important;
+        margin-top: 75px !important;
     }
 }
 
@@ -52,9 +73,9 @@ nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 100px;
     line-height: 100px;
 }
-.carousel{
-    min-height: 100% !important
-}
+/* .carousel{
+    min-height: 50vh !important
+} */
 .overlay{
         /* position: relative; */
         position: fixed;
@@ -65,4 +86,43 @@ nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
 }
 .btn-block{
     width: 100%
+}
+.card_image{
+    min-width:100px;
+    height:270px;
+    width: auto !important;
+    left: -50 !important
+}
+
+blockquote{
+    border-left: 5px solid #dbd79d !important;
+}
+.secondary{
+    background-color: #dbb89d !important;
+    color: rgb(236, 236, 236) !important;
+    font-weight: 800;
+    font-size: 18px
+}
+.text-secondary-title{
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    color: rgb(236, 236, 236);
+}
+.text-secondary{
+    color: rgb(236, 236, 236) !important;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    border: 1px solid rgb(236, 236, 236) !important;
+    text-indent: 10px;
+    border-radius: 5px !important;
+    color:rgb(236, 236, 236) !important
+}
+nav ul a{
+    color: rgb(236, 236, 236) !important;
+    font-weight: 800;
+    font-size: 1.4rem !important;
+}
+body{
+    background-color: #dbb89d;
+    color: rgb(236, 236, 236)
 }
