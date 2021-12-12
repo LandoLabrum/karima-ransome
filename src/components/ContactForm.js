@@ -1,8 +1,7 @@
 import { useForm } from "react-hook-form";
 import dta from '../delegate';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 var AWS = require('aws-sdk');
-
 
 const normalizeInput = (value, previousValue) => {
     if (!value) return value;
@@ -25,16 +24,20 @@ const validateInput = value => {
     return error;
 };
 export default function App() {
+
+    if (typeof process.env.REACT_APP_KEY_ID !== "undefined") {
+        // alert(`Hi. Variable is defined. ${process.env.REACT_APP_KEY_ID}`);
+    }
     const [FormData, setFormData] = useState(<Form />)
     const grid = dta.gridlist.items
     AWS.config.update({
         region: 'us-west-1',
-        accessKeyId: "AKIAVNAUTAKTK26GTHC2",
-        secretAccessKey: "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"
+        accessKeyId: process.env.REACT_APP_KEY_ID,
+        secretAccessKey: process.env.REACT_APP_SECRET_KEY
     });
     const { register, handleSubmit } = useForm();
     function OnSubmit(data) {
-      
+
         var params = {
             Destination: {
                 ToAddresses: [
@@ -62,7 +65,7 @@ export default function App() {
                 'mail@deepturn.com',
             ],
         };
-        alert(JSON.stringify(params));
+        // alert(JSON.stringify(params));
 
         var sendPromise = new AWS.SES({ apiVersion: '2010-12-01' }).sendEmail(params).promise();
         sendPromise.then(
@@ -77,18 +80,18 @@ export default function App() {
     }
     function Form() {
         return <form onSubmit={handleSubmit(OnSubmit)}>
-            <h4>Request More Info</h4>
+            <h4>Contact Us</h4>
             <div>
-                <label htmlFor="firstName">First Name</label>
+                <label className="text-secondary" htmlFor="firstName">First Name</label>
                 <input {...register("firstName")} />
             </div>
 
             <div>
-                <label htmlFor="lastName">Last Name</label>
+                <label className="text-secondary" htmlFor="lastName">Last Name</label>
                 <input {...register("lastName")} />
             </div>
             <div>
-                <label htmlFor="tel">Phone</label>
+                <label className="text-secondary" htmlFor="tel">Phone</label>
                 <input
                     id="tel"
                     type="text"
@@ -96,7 +99,7 @@ export default function App() {
                 />
             </div>
             <div>
-                <label htmlFor="email">Email</label>
+                <label className="text-secondary" htmlFor="email">Email</label>
                 <input
                     type="email"
                     {...register("email")}
@@ -106,12 +109,18 @@ export default function App() {
             <div className="row">
                 {grid && grid.map(p =>
                     <div className="col s3">
-                        <label className="no-radio">
+                        <label className="no-radio text-secondary">
                             <input name="service" type="radio" value={p.title} {...register("service")} required />
                             <span>{p.title}</span>
                         </label>
                     </div>
                 )}
+                <div className="col s3">
+                    <label className="no-radio text-secondary">
+                        <input name="service" type="radio" value="employment" required />
+                        <span>Employment</span>
+                    </label>
+                </div>
             </div>
             <input className={"btn btn-block ".concat(dta.style.primary.background)} type="submit" value="Request Services" />
         </form>

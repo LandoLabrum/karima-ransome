@@ -1,16 +1,16 @@
-import '../main.css';
+// import '../main.css';
 import React, { useState, useEffect } from 'react';
 import data from '../delegate';
 import logo from '../media/logo.png';
-
+import { Link } from "react-router-dom";
 
 export default function Nav() {
     function LinkHandler(i){
         let p = i.p
         if(p.class.includes("modal-trigger")){
-            return <li ><a key={p.text} className={p.class} href={p.link}>{p.text}</a></li>
+            return <li ><a key={p.text} className={p.class} href={p.link}>{p.icon?<i className="material-icons">{p.icon}</i>:null}{p.text}</a></li>
         }else{
-            return <li  ><a key={p.text} className={p.class} href={p.link}>{p.icon?<i className="material-icons">{p.icon}</i>:null}{p.text}</a></li>
+            return <li><Link key={p.text} className={p.class} to={p.link}>{p.icon?<i className="material-icons">{p.icon}</i>:null}{p.text}</Link></li>
         }
     }
     const [styleData, setstyleData] = useState(null)
@@ -27,8 +27,8 @@ export default function Nav() {
         <title>{ titleData }</title>
         <nav className="">
             <div key={styleData && styleData.primary.background} className={"nav-wrapper ".concat(styleData && styleData.primary.background)}>
-                <a key={logoData && logoData.alt} href="/" className="brand-logo"><img className="logo" alt={logoData && logoData.alt} src={logo}/></a>
-                <a href="mobile-demo" className="sidenav-trigger white-text"><i className="material-icons">menu</i></a>
+                <Link key={logoData && logoData.alt} to="/" className="brand-logo"><img className="logo" alt={logoData && logoData.alt} src={logo}/></Link>
+                <a data-target="mobile-demo" className="sidenav-trigger white-text"><i className="material-icons">menu</i></a>
                 <ul className="right hide-on-med-and-down">
                     {linkData && linkData.desktop.map(p => (
                         <span key={p.text}>

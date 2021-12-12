@@ -1,3 +1,5 @@
+import React from 'react';
+
 import data from '../delegate';
 
 export default function Carousel() {
@@ -9,9 +11,9 @@ export default function Carousel() {
         <div key={p.title} className="carousel-item">
           <img alt={p.title} className="responsive-img" src={p.img} />
           <div className="overlay">
-            <h1 className="orange-text">{p.title}</h1>
+            {/* <h1 className="orange-text">{p.title}</h1>
             <p >{p.description}</p>
-            <a href="/" className="btn waves-effect white grey-text darken-text-2">button</a>
+            <a href="/" className="btn waves-effect white grey-text darken-text-2">button</a> */}
           </div>
         </div>
       )}

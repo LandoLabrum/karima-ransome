@@ -32,13 +32,13 @@ const data = {
                     "link": "/",
                     "class": " "
                 },
+                // {
+                //     "text": "Contact",
+                //     "link": "#contact",
+                //     "class": "modal-trigger "
+                // },
                 {
                     "text": "Contact",
-                    "link": "#contact",
-                    "class": "modal-trigger "
-                },
-                {
-                    "text": "Contact Form",
                     "link": "#contactForm",
                     "class": "modal-trigger "
                 },
@@ -52,7 +52,9 @@ const data = {
                 {
                     "text": "phone",
                     "link": "#contact",
-                    "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light "
+                    "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light ",
+                    
+
                 },
                 {
                     "text": "Home",
@@ -65,6 +67,13 @@ const data = {
                     "link": "/about",
                     "class": "",
                     "icon": "info"
+                },
+                {
+                    "text": "Contact",
+                    "link": "#contactForm",
+                    "class": "modal-trigger ",
+                    "icon": "email"
+                    
                 }
             ]
         }
@@ -125,7 +134,7 @@ const data = {
         "items": [
             {
                 "title": "Seniors",
-                "description": "Helping Seniors",
+                "description": "NuBirth Home Care was founded on the principle of providing the best  care for the elderly to adults in need. Our mission is rooted  in providing key non-medical services to enable older people to age with dignity in  their homes.",
                 "img": require("./media/slider/4.jpeg").default,
                 "action": {
                     "class": "",
@@ -133,9 +142,9 @@ const data = {
                 }
             },
             {
-                "title": "Maturnity",
-                "description": "Helping Those Maturnity",
-                "img": require("./media/slider/4.jpeg").default,
+                "title": "maternity",
+                "description": "Helping Those maternity",
+                "img": require("./media/slider/maternity.jpeg").default,
                 "action": {
                     "class": "",
                     "href": ""
@@ -144,7 +153,7 @@ const data = {
             {
                 "title": "Recuperation",
                 "description": "Helping Those Recuperating",
-                "img": require("./media/slider/4.jpeg").default,
+                "img": require("./media/slider/recuperation.jpg").default,
                 "action": {
                     "class": "",
                     "href": ""
@@ -153,7 +162,7 @@ const data = {
             {
                 "title": "Disabled",
                 "description": "Helping People with Disabilities",
-                "img": require("./media/slider/4.jpeg").default,
+                "img": require("./media/slider/disabled.jpg").default,
                 "action": {
                     "class": "",
                     "href": ""
@@ -162,7 +171,7 @@ const data = {
             {
                 "title": "Veterans",
                 "description": "Helping Veterans",
-                "img": require("./media/slider/4.jpeg").default,
+                "img": require("./media/slider/veteran.jpg").default,
                 "action": {
                     "class": "",
                     "href": ""
@@ -171,7 +180,7 @@ const data = {
             {
                 "title": "Family",
                 "description": "Helping Busy Families",
-                "img": require("./media/slider/4.jpeg").default,
+                "img": require("./media/slider/family.jpg").default,
                 "action": {
                     "class": "",
                     "href": ""
