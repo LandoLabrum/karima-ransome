@@ -39,13 +39,11 @@ export default function GridList() {
 
                 <ScrollAnimation animateIn="fadeIn" duration={3000}>
                     <div className='section row fade-item'>
-                        <div className='valign-wrapper '>
-                            <div className={i % 2 == 0 ? "col s12 m6 l4 pull-l1" : "col s12 m6 push-m6 l4 offset-l1 push-l6 center"}>
+                        <div className=''>
+                            <div className={i % 2 == 0 ? "col s12 m7 l7" : "col s12 m6 push-m6 l5 push-l7 center"}>
                                 <img alt={p.title} className="responsive-img" src={p.img} />
-
-
                             </div>
-                            <div className={i % 2 == 0 ? "col s12 m6 pull-l2 l5 center" : "col s12 m6 pull-m6 pull-l6 l4 center "}>
+                            <div className={i % 2 == 0 ? "col s12 m6 l5 center" : "col s12 m6 pull-m6 pull-l4 l5 center "}>
                                 <h4>{p.title}</h4>
                                 <p >{p.description}</p>
                             </div>

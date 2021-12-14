@@ -1,4 +1,3 @@
-// import './main.css';
 import Nav from './components/Navbar';
 import Contact from './components/Contact';
 import Home from './pages/Home';
