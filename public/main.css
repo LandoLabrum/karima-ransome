@@ -110,9 +110,7 @@ section {
     nav{
         height: 100px !important
     }
-    .nav-helper{
-        margin-top: -15px;
-    }
+
 }
 @media only screen and (min-width: 993px){
     img.logo{
@@ -123,9 +121,7 @@ section {
         height: 125px !important;
         
     }
-    .nav-helper{
-        margin-top: 75px !important;
-    }
+
 }
 
 .fab{

@@ -49,13 +49,13 @@ const data = {
                 }
             ],
             "mobile": [
-                {
-                    "text": "phone",
-                    "link": "#contact",
-                    "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light ",
+                // {
+                //     "text": "phone",
+                //     "link": "#contact",
+                //     "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light ",
                     
 
-                },
+                // },
                 {
                     "text": "Home",
                     "link": "/",

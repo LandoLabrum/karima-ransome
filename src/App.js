@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Home from './pages/Home';
 import About from './pages/About';
 import Form from './components/ContactForm';
+import preval from 'preval.macro'
 
 import React from "react";
 import {
@@ -26,6 +27,11 @@ export default function App() {
         </div>
         </div>
         <Contact/>
+        <small className=''>
+          <span className='row grey-text right'>
+            Build Date: {preval`module.exports = new Date().toLocaleString();`}.
+            </span>
+          </small>
     </Router>
   );
 }
