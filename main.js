@@ -6,7 +6,7 @@ $(document).ready(function () {
     indicators: true
   });
   setInterval(function () {
-    $('.carousel.carousel-slider').carousel('next');
+    $('.carousel').carousel('next');
   }, 4000);
 
   const isNumericInput = (event) => {
