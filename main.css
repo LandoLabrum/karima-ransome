@@ -1,3 +1,8 @@
+.full{
+    top: 0 !important;
+    width: 100% !important;
+    min-height: 100% !important;
+}
 .small{
     font-size: 10px  !important;
     line-height: 20px !important;
@@ -7,7 +12,9 @@
     overflow: hidden;
     right: 0; 
 }
-
+.address{
+    padding-bottom: 26px !important;
+}
 #slide {
     position: absolute;
     background-color: #A7CEEF;
