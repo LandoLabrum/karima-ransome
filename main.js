@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('.sidenav').sidenav();
   $(".modal").modal();
+
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true

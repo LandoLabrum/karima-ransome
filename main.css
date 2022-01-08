@@ -1,3 +1,6 @@
+.transparent{
+    background-color: #ffffff00 !important;
+}
 .full{
     top: 0 !important;
     width: 100% !important;
@@ -159,7 +162,9 @@ nav{
     border: none !important;
     box-shadow: none !important;
 }
-
+.sidenav li>a, .sidenav li>a>i{
+    color: #fff !important
+}
 nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 100px;
     line-height: 100px;
@@ -217,3 +222,13 @@ body{
     background-color: #dbb89d;
     color: rgb(236, 236, 236)
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
