@@ -82,25 +82,19 @@ section {
     margin: 16px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .125);
     height: 64px;
-    opacity: 0;
-    transform: translate(0, 50%);
-    visibility: hidden;
-    transition: opacity 300ms ease-out, transform 300ms ease-out;
-    will-change: opacity, visibility;
   }
   .hide{opacity: 0;}
   .is-visible {
     opacity: 1;
     transform: none;
-    visibility: visible;
     display: flex; 
   }
-.fade-item {
+/* .fade-item {
     transition: 3s all ease-in-out;
     opacity: 0;
-}
+} */ */
 
-.fadein {
+/* .fadein {
     animation: fadeIns 3s 1;
     animation-fill-mode: forwards;
 }
@@ -112,7 +106,7 @@ section {
     100% {
         opacity: .9;
     }
-}
+} */
 .left-in{
     overflow-x: hidden;
     transform: translateX(-50%);
