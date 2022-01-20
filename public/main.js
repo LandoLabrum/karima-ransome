@@ -1,12 +1,16 @@
 $(document).ready(function () {
+  $( "#other" ).click(function() {
+    $( "#target" ).click();
+  });
   $('.sidenav').sidenav();
   $(".modal").modal();
+
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true
   });
   setInterval(function () {
-    $('.carousel.carousel-slider').carousel('next');
+    $('.carousel').carousel('next');
   }, 4000);
 
   const isNumericInput = (event) => {
@@ -35,15 +39,15 @@ $(document).ready(function () {
     }
   };
 
-  var items = document.getElementsByClassName("fade-item");
-  for (let i = 0; i < items.length; ++i) {
-    fadeIn(items[i], i * 1000)
-  }
-  function fadeIn (item, delay) {
-    setTimeout(() => {
-      item.classList.add('fadein')
-    }, delay)
-  }
+  // var items = document.getElementsByClassName("fade-item");
+  // for (let i = 0; i < items.length; ++i) {
+  //   fadeIn(items[i], i * 1000)
+  // }
+  // function fadeIn (item, delay) {
+  //   setTimeout(() => {
+  //     item.classList.add('fadein')
+  //   }, delay)
+  // }
 
   const formatToPhone = (event) => {
     if (isModifierKey(event)) { return; }

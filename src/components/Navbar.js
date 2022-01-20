@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 export default function Nav() {
     function LinkHandler(i){
         let p = i.p
-        if(p.class.includes("modal-trigger")){
+        if(p.class.includes("void")){
+            return null
+        }if(p.class.includes("modal-trigger")){
             return <li ><a key={p.text} className={p.class} href={p.link}>{p.icon?<i className="material-icons">{p.icon}</i>:null}{p.text}</a></li>
         }else{
             return <li><Link key={p.text} className={p.class} to={p.link}>{p.icon?<i className="material-icons">{p.icon}</i>:null}{p.text}</Link></li>
@@ -38,7 +40,7 @@ export default function Nav() {
                 </ul>
             </div>
         </nav>
-        <ul className="sidenav" id="mobile-demo">
+        <ul className="sidenav secondary" id="mobile-demo">
             {linkData && linkData.mobile.map(p => 
                 !p.class.includes("fab")?<LinkHandler key={p.text} p={p}/>:null
             )}

@@ -15,14 +15,25 @@ const data = {
             "alt": "logo",
             "src": "https://dttdrlk9qx747.cloudfront.net/images/logos/logo.2012181350185.png"
         },
-        "contact": {
-            "email": "info@utahcountertops.com",
-            "tel": "4356719245",
-            "address": {
-                "link": "https://www.google.com/maps/dir//Utah+Countertops,+358+W+5900+S,+Murray,+UT+84107/@40.6433467,-111.9022248,17z/",
-                "text": "123 Fake Street"
+        "contact": [
+            {
+                "email": "",
+                "tel": "8432511724",
+                "address": {
+                    "link": "https://goo.gl/maps/4szxncMQBtG3NQLQ8",
+                    "text": "1293 Professional Dr, Myrtle Beach, SC 29577"
+                }
+            },
+            {
+                "email": "",
+                "tel": "2679689779",
+                "address": {
+                    "link": "https://goo.gl/maps/4szxncMQBtG3NQLQ8",
+                    "text": "1293 Professional Dr, Myrtle Beach, SC 29577"
+                }
             }
-        }
+        ]
+
     },
     "nav": {
         "links": {
@@ -32,30 +43,40 @@ const data = {
                     "link": "/",
                     "class": " "
                 },
-                // {
-                //     "text": "Contact",
-                //     "link": "#contact",
-                //     "class": "modal-trigger "
-                // },
+                {
+                    "text": "Contact",
+                    "link": "#contact",
+                    "class": "modal-trigger void"
+                },
                 {
                     "text": "Contact",
                     "link": "#contactForm",
                     "class": "modal-trigger "
                 },
                 {
+                    "text": "Employment",
+                    "link": "/employment",
+                    "class": ""
+                },
+                {
                     "text": "About",
                     "link": "/about",
+                    "class": ""
+                },
+                {
+                    "text": "Services",
+                    "link": "/service",
                     "class": ""
                 }
             ],
             "mobile": [
-                // {
-                //     "text": "phone",
-                //     "link": "#contact",
-                //     "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light ",
-                    
+                {
+                    "text": "phone",
+                    "link": "#contact",
+                    "class": "modal-trigger fab btn-floating btn-large waves-effect waves-light ",
 
-                // },
+
+                },
                 {
                     "text": "Home",
                     "link": "/",
@@ -73,7 +94,19 @@ const data = {
                     "link": "#contactForm",
                     "class": "modal-trigger ",
                     "icon": "email"
-                    
+                },
+                {
+                    "text": "Employment",
+                    "link": "/employment",
+                    "class": "",
+                    "icon": "work"
+                },
+                {
+                    "text": "Services",
+                    "link": "/service",
+                    "class": "",
+                    "icon": "handshake"
+
                 }
             ]
         }
@@ -120,12 +153,12 @@ const data = {
         ]
     },
     "gridlist": {
-        "title":"Personalized Home Care Services.",
-        "description":"At Nu-Birth home services, it is our mission to provide high quality services at an affordable rates that exceeds industry standards.",
+        "title": "Personalized Home Care Services.",
+        "description": "We understand that we all have plans, But life happens! Let our family become your family because family matters.",
         "items": [
             {
                 "title": "Seniors",
-                "description": "NuBirth Home Care was founded on the principle of providing the best  care for the elderly to adults in need. Our mission is rooted  in providing key non-medical services to enable older people to age with dignity in  their homes.",
+                "description": "NuBirth Home Care was founded on the principle of providing the best  care for the elderly to adults in need. Our mission is rooted  in providing key non-medical services to enable the elderly to age with dignity in  their homes.",
                 "img": require("./media/slider/4.jpeg").default,
                 "action": {
                     "class": "",
@@ -133,7 +166,7 @@ const data = {
                 }
             },
             {
-                "title": "maternity",
+                "title": "Maternity",
                 "description": "We work hard to provide patients with care that is consistent with safety and effectiveness. Patients receive individualized care that considers their personal needs and the needs of the unborn child.",
                 "img": require("./media/slider/maternity.jpeg").default,
                 "action": {
@@ -152,7 +185,7 @@ const data = {
             },
             {
                 "title": "Disabled",
-                "description": "Home nurses provide reliable one-on-one care for people with special needs, regardless of age or illness. Our care team provides flexible hourly and 24-hour services to provide relatives with  experienced caregivers to meet the individual needs of the family.",
+                "description": "We provide reliable one-on-one care for people with special needs, regardless of age or illness. Our care team provides flexible hourly and 24-hour services to provide relatives with  experienced caregivers to meet the individual needs of the family.",
                 "img": require("./media/slider/disabled.jpg").default,
                 "action": {
                     "class": "",
@@ -161,7 +194,7 @@ const data = {
             },
             {
                 "title": "Veterans",
-                "description": "There are various home care programs and services tailored to meet the specific needs of veterans. From personal care to  appointments to short-term care services, a home-based professional caregiver will meet all your care needs.",
+                "description": "There are various home care programs and services tailored to meet the specific needs of veterans. From personal care to  appointments to short-term care services, a home-based professional caregiver will meet all your care needs. Ask about our Verterans discount.",
                 "img": require("./media/slider/veteran.jpg").default,
                 "action": {
                     "class": "",
@@ -176,8 +209,94 @@ const data = {
                     "class": "",
                     "href": ""
                 }
+            }, {
+                "title": "Respite Care",
+                "description": "Respite care provides short-term relief for primary caregivers. It can be arranged for just an afternoon or for several days or weeks. Care can be provided at home, in a healthcare facility, or at an adult day center.",
+                "img": require("./media/slider/4.jpeg").default,
+                "action": {
+                    "class": "",
+                    "href": ""
+                }
+            },
+        ]
+    },
+    "HowWeCare": {
+        "title": "Personalized Home Care Services.",
+        // "description": "",
+        "description": "We understand that we all have plans, But life happens! Let our family become your family because family matters.",
+        "items": [
+            {
+                "title": "Companionship",
+                "items": [
+                    "Emotional Support",
+                    "Hobbies and playing games",
+                    "Outdoor activities ( walking, park, beach)",
+                    "Personal correspondence",
+                    "Shopping and errands",
+                    "Medication reminder",
+                    "Accompanying to social events",
+                    "Light housekeeping assistance",
+                    "Maintaining safety and Security"
+                ]
+            },
+            {
+                "title": "Personal Care",
+                "items": [
+                    "Bathing",
+                    "Dressing",
+                    "Hair care",
+                    "Oral care",
+                    "Nail care",
+                    "Grooming",
+                    "Skin care",
+                    "General hygiene",
+                    "Perineal care",
+                    "Incontinence Care",
+                    "Repositioning",
+                    "Supporting physical therapy exercises",
+                    "Restroom assistance",
+                    "Light housekeeping",
+                    "Meal prep",
+                    "Medication reminder"]
+            },
+            {
+                "title": "Homemaker",
+                "items": [
+                    "Light housekeeping",
+                    "Laundry ",
+                    "Washing dishes",
+                    "Meal planning & prep",
+                    "Bedmaking",
+                    "Organationation",
+                    "Running errands",
+                    "Grocery shopping",
+                    "And more"
+                ]
+            },
+            {
+                "title": "Teen Services",
+                "items": [
+                    "Depression",
+                    "Companionship",
+                    "Transportation"
+                ]
+            },
+            {
+                "title": "Transportation",
+                "items": [
+                    "Shopping & Errands",
+                    "Appointments",
+                    "Social events",
+                    "Hospital pick ups",
+                    "Activities",
+                    "Therapy",
+                ]
             },
         ]
     }
 }
 export default data;
+
+
+
+

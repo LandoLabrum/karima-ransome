@@ -47,12 +47,6 @@ export default function Home() {
         <div className='containerb valign-wrapper'>
             <img className="imgb" src={header} />
             <div className="wrapper">
-                <div id="slide" className='valign-wrapper'>
-                    <img className="imga" src={logo} />
-                    <small className='imga-text'><h5 className='imga-text-title'>Nu-Birth Home Care Services</h5>1293 Professional dr 
-Myrtle Beach SC 29577</small>
-                    
-                </div>
             </div>
         </div>
         <Services />

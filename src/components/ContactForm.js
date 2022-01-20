@@ -30,6 +30,7 @@ export default function App() {
     }
     const [FormData, setFormData] = useState(<Form />)
     const grid = dta.gridlist.items
+    const Hwc = dta.HowWeCare.items
     AWS.config.update({
         region: 'us-west-1',
         accessKeyId: process.env.REACT_APP_KEY_ID,
@@ -37,18 +38,20 @@ export default function App() {
     });
     const { register, handleSubmit } = useForm();
     function OnSubmit(data) {
-
+        // alert(JSON.stringify(data))
+        // var Email = 'mail@deepturn.com'
+        var Email = 'k.ransome@nubirthhcs.com'
         var params = {
             Destination: {
                 ToAddresses: [
-                    'mail@deepturn.com',
+                    Email,
                 ]
             },
             Message: {
                 Body: {
                     Html: {
                         Charset: "UTF-8",
-                        Data: `Name: ${data.firstName} ${data.lastName} <br/> Phone: ${data.tel}<br/> Email: ${data.email}<br/> service requested: ${data.service}`
+                        Data: `Name: ${data.firstName} ${data.lastName} <br/> Phone: ${data.tel}<br/> Email: ${data.email}<br/> service requested: ${data.service}<br/> Notes: ${data.note} <br/> Needs: ${data.how}`
                     },
                     Text: {
                         Charset: "UTF-8",
@@ -60,9 +63,9 @@ export default function App() {
                     Data: 'Nu-Birth Service Request'
                 }
             },
-            Source: 'mail@deepturn.com',
+            Source: Email,
             ReplyToAddresses: [
-                'mail@deepturn.com',
+                Email,
             ],
         };
         // alert(JSON.stringify(params));
@@ -71,7 +74,7 @@ export default function App() {
         sendPromise.then(
             function () {
                 console.error(data.MessageId);
-                setFormData(<><h4 className="green-text">We've Successfully Received Your Request.</h4>Please allow us time to process your request and we will get back with you as soon as possible</>);
+                setFormData(<><h4 className="green-text ">We've Successfully Received Your Request.</h4>Please allow us time to process your request and we will get back with you as soon as possible</>);
             }).catch(
                 function (err) {
                     console.error(err, err.stack);
@@ -80,48 +83,78 @@ export default function App() {
     }
     function Form() {
         return <form onSubmit={handleSubmit(OnSubmit)}>
-            <h4>Contact Us</h4>
-            <div>
-                <label className="text-secondary" htmlFor="firstName">First Name</label>
-                <input {...register("firstName")} />
-            </div>
-
-            <div>
-                <label className="text-secondary" htmlFor="lastName">Last Name</label>
-                <input {...register("lastName")} />
-            </div>
-            <div>
-                <label className="text-secondary" htmlFor="tel">Phone</label>
-                <input
-                    id="tel"
-                    type="text"
-                    {...register("tel")}
-                />
-            </div>
-            <div>
-                <label className="text-secondary" htmlFor="email">Email</label>
-                <input
-                    type="email"
-                    {...register("email")}
-                />
-            </div>
-            <p>Service Type</p>
+            <div className="card">
+                <div className="card-content amber lighten-5">
             <div className="row">
-                {grid && grid.map(p =>
-                    <div className="col s3">
-                        <label className="no-radio text-secondary">
-                            <input name="service" type="radio" value={p.title} {...register("service")} required />
-                            <span>{p.title}</span>
-                        </label>
+                    <h5 className="deep-purple-text text-lighten-2">Contact Us</h5>
+                    <div className="col s12 m6" >
+                        <label className="" htmlFor="firstName">First Name</label>
+                        <input {...register("firstName")} />
                     </div>
-                )}
-                <div className="col s3">
-                    <label className="no-radio text-secondary">
-                        <input name="service" type="radio" value="employment" required />
-                        <span>Employment</span>
-                    </label>
+                    <div className="col s12 m6">
+                        <label className="" htmlFor="lastName">Last Name</label>
+                        <input {...register("lastName")} />
+                    </div>
+                    <div className="col s12 m12">
+                        <label className="" htmlFor="tel">Phone</label>
+                        <input
+                            id="tel"
+                            type="text"
+                            {...register("tel")}
+                        />
+
+                    </div>
+                    <div className="col s12">
+                        <label className="" htmlFor="email">Email</label>
+                        <input
+                            type="email"
+                            {...register("email")}
+                        />
+                    </div>
+                    <div className="col s12">
+                        <label className="" htmlFor="note">Notes</label>
+                        <input
+                            type="text"
+                            {...register("note")}
+                        />
+                    </div>
+                </div>
                 </div>
             </div>
+            <div className="row card">
+                <div className="card-content amber lighten-5">
+                    <h5 className="deep-purple-text text-lighten-2">Service Type</h5>
+                    {grid && grid.map(p =>
+                        <div className="col s12 m3">
+                            <label className="no-radio ">
+                                <input name="service" type="radio" value={p.title} {...register("service")} required />
+                                <span>{p.title}</span>
+                            </label>
+                        </div>
+                    )}
+                    <div className="break-bottom"></div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="card-content amber lighten-5">
+                    <h5 className="deep-purple-text text-lighten-2">How We Care</h5>
+                    <p className="deep-purple-text text-lighten-3">Choose any of the following that apply to the services you require.</p>
+                    {Hwc && Hwc.map(p =>
+                        <div className="fieldset row">
+                            <br />
+                            <h5 className="deep-purple-text text-lighten-2">{p.title}</h5>
+                            {p.items && p.items.map(p =>
+                                <div className="col s12 m6 l4">
+                                    <label className="no-radio">
+                                        <input name="how" type="checkbox" value={p} {...register("service")} />
+                                        <span>{p}</span>
+                                    </label>
+                                </div>
+                            )}
+                        </div>
+                    )}
+                </div >
+            </div >
             <input className={"btn btn-block ".concat(dta.style.primary.background)} type="submit" value="Request Services" />
         </form>
     }

@@ -1,8 +1,23 @@
+.transparent{
+    background-color: #ffffff00 !important;
+}
+.full{
+    top: 0 !important;
+    width: 100% !important;
+    min-height: 100% !important;
+}
+.small{
+    font-size: 10px  !important;
+    line-height: 20px !important;
+    height: 23px !important;
+}
 .wrapper {
     overflow: hidden;
     right: 0; 
 }
-
+.address{
+    padding-bottom: 26px !important;
+}
 #slide {
     position: absolute;
     background-color: #A7CEEF;
@@ -18,7 +33,10 @@
     bottom: 0;
     padding-left: 15px;
 }
-
+.break-bottom{
+    display: inline-block;
+    margin-bottom: 56px !important;
+}
 @-webkit-keyframes slide {
     100% { right: 0; }
 }
@@ -67,25 +85,19 @@ section {
     margin: 16px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .125);
     height: 64px;
-    opacity: 0;
-    transform: translate(0, 50%);
-    visibility: hidden;
-    transition: opacity 300ms ease-out, transform 300ms ease-out;
-    will-change: opacity, visibility;
   }
   .hide{opacity: 0;}
   .is-visible {
     opacity: 1;
     transform: none;
-    visibility: visible;
     display: flex; 
   }
-.fade-item {
+/* .fade-item {
     transition: 3s all ease-in-out;
     opacity: 0;
-}
+} */ */
 
-.fadein {
+/* .fadein {
     animation: fadeIns 3s 1;
     animation-fill-mode: forwards;
 }
@@ -97,7 +109,7 @@ section {
     100% {
         opacity: .9;
     }
-}
+} */
 .left-in{
     overflow-x: hidden;
     transform: translateX(-50%);
@@ -147,7 +159,9 @@ nav{
     border: none !important;
     box-shadow: none !important;
 }
-
+.sidenav li>a, .sidenav li>a>i{
+    color: #fff !important
+}
 nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 100px;
     line-height: 100px;
@@ -194,7 +208,8 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     border: 1px solid rgb(236, 236, 236) !important;
     text-indent: 10px;
     border-radius: 5px !important;
-    color:rgb(236, 236, 236) !important
+    color: rgb(42, 42, 42) !important;
+    
 }
 nav ul a{
     color: rgb(236, 236, 236) !important;
@@ -205,3 +220,13 @@ body{
     background-color: #dbb89d;
     color: rgb(236, 236, 236)
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

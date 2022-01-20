@@ -1,10 +1,10 @@
-import Carousel from "../components/Carousel";
 import Services from "../components/GridList"
 
 
-export default function Home() {
+export default function Main() {
     return(<>
-        <Carousel/>
+        <br/>
+        <br/>
         <Services/>
         </>
     );
