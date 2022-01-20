@@ -113,8 +113,8 @@ export default function App() {
     }
     function OnSubmit(data) {
         // alert(JSON.stringify(data))
-        var Email = 'mail@deepturn.com'
-        // var Email = 'k.ransome@nubirthhcs.com'
+        // var Email = 'mail@deepturn.com'
+        var Email = 'k.ransome@nubirthhcs.com'
         var params = {
         Destination: {
          ToAddresses: [
