@@ -33,7 +33,10 @@
     bottom: 0;
     padding-left: 15px;
 }
-
+.break-bottom{
+    display: inline-block;
+    margin-bottom: 56px !important;
+}
 @-webkit-keyframes slide {
     100% { right: 0; }
 }
@@ -205,7 +208,8 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     border: 1px solid rgb(236, 236, 236) !important;
     text-indent: 10px;
     border-radius: 5px !important;
-    color:rgb(236, 236, 236) !important
+    color: rgb(42, 42, 42) !important;
+    
 }
 nav ul a{
     color: rgb(236, 236, 236) !important;
