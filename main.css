@@ -37,6 +37,9 @@
     display: inline-block;
     margin-bottom: 56px !important;
 }
+.break-bottom-padding{
+    padding-bottom: 56px !important;
+}
 @-webkit-keyframes slide {
     100% { right: 0; }
 }
