@@ -18,6 +18,9 @@
 .address{
     padding-bottom: 26px !important;
 }
+.break{
+    height: 100px !important
+}
 #slide {
     position: absolute;
     background-color: #A7CEEF;
