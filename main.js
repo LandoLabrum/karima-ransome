@@ -1,3 +1,13 @@
+
+  document.addEventListener('DOMContentLoaded', function() {
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    setInterval(function () {
+      $(".carousel").carousel("next");
+    }, 4000);
+  });
 $(document).ready(function () {
   $( "#other" ).click(function() {
     $( "#target" ).click();
@@ -5,13 +15,7 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   $(".modal").modal();
 
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
-  setInterval(function () {
-    $('.carousel').carousel('next');
-  }, 4000);
+
 
   const isNumericInput = (event) => {
     const key = event.keyCode;
