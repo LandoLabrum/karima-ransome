@@ -1,13 +1,15 @@
+$(document).ready(function(){
+	$('.carousel').carousel({
+		fullWidth: true,
+		indicators: true
+	});
 
-  document.addEventListener('DOMContentLoaded', function() {
-    $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: true
-    });
-    setInterval(function () {
-      $(".carousel").carousel("next");
-    }, 4000);
-  });
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	};
+});
 $(document).ready(function () {
   $( "#other" ).click(function() {
     $( "#target" ).click();
