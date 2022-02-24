@@ -1,5 +1,6 @@
 // CAROUSEL
 $(document).ready(function(){
+  
   $('.carousel').carousel(
   {
     dist: 0,
